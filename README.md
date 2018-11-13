@@ -3,6 +3,8 @@
 * Use Ruby version manager
   * Install rbenv if it isn't installed: `brew install rbenv`
   * Upgrade rbenv if it's already installed: `brew upgrade rbenv`
+* Setup rbenv integration to your shell
+  * `rbenv init`
 * Install and use Ruby version 2.5.3
   * `rbenv install 2.5.3`
   * `rbenv global 2.5.3`
