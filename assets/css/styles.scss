@@ -1,5 +1,8 @@
 ---
 ---
 
-@import "bootstrap/bootstrap";
-@import "main";
+@import "bootstrap/bootstrap",
+		"variables",
+		"main",
+		"nav"
+		;
