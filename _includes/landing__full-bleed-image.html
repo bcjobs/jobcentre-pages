@@ -1,13 +1,14 @@
-<section class="landing__full-bleed-image">
+<section class="landing__full-bleed-image" style="background-image: url('{{page.landing-background-image}}')">
 	<div class="container">
 		<div class="row">
 
-			<div class="col-sm-8">
-				<h1>Get Free Unlimited Job Postings for 3 days</h1>
+			<div class="col-sm-6 col-lg-8 clear-overlay landing__col-text">
+				<h1 class="landing__heading">Get Free Unlimited Job Postings for 3 days</h1>
+				<h4 class="landing__subheading">No Term Commitment, Cancel Any Time</h4>
 			</div>
 
-			<div class="col-sm-4">
-				{% include 'form__sign-up.html' %}
+			<div class="col-sm-6 col-lg-4 clear-overlay landing__col-form">
+				{% include form__sign-up.html %}
 			</div>
 
 		</div>
