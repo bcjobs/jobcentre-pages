@@ -1,0 +1,42 @@
+.sign-up{
+	background-color: white;
+	padding: 32px;
+	border-radius: $global-border-radius;
+}
+
+.form__field-input{
+	background-color: $light-grey;
+	@include placeholder{
+		opacity: 0.5;
+		@include font-size(0.8rem, 0.8rem, 0.8rem, 0.8rem, 0.8rem);
+	}
+}
+
+.form__field-label{
+	margin: 0;
+	color: $medium-dark-grey;
+	// font-weight: 600;
+	text-transform: uppercase;
+	@include font-size(0.7rem, 0.7rem, 0.7rem, 0.7rem, 0.7rem);
+}
+
+.form__field-group{
+	margin-bottom: 4px;
+}
+
+.form__submit{
+	background-color: $primary-highlight;
+	display: block;
+	width: 100%;
+	margin-top: 16px;
+	padding: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-weight: 600;
+	font-size: 0.8rem;
+}
+
+.form__heading{
+	color: $medium-dark-grey;
+	font-weight: 600;
+}

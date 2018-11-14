@@ -1,3 +1,13 @@
-.active {
-  color: orange;
+*{
+	font-family: $primary-font;
+}
+
+
+.clear-overlay{
+	position: relative;
+	z-index: 1;
+}
+
+.box-shadow{
+	@include box-shadow(4px, 4px, 4px, rgba(89, 106, 125, 0.15));
 }
