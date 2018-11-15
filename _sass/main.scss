@@ -1,5 +1,6 @@
 *{
 	font-family: $primary-font;
+	color: $brand-dark;
 }
 
 
@@ -10,4 +11,17 @@
 
 .box-shadow{
 	@include box-shadow(4px, 4px, 4px, rgba(89, 106, 125, 0.15));
+}
+
+.content-row{
+	padding: 144px 0;
+}
+
+.heading--highlight{
+	font-weight: 600;
+	color: $primary-highlight;
+}
+
+.body-copy--large{
+	@include font-size(1.2rem, 1.2rem, 1.2rem, 1.2rem, 1.2rem);
 }
