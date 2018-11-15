@@ -1,0 +1,44 @@
+.page-section__card-row{
+	background-color: $light-primary;
+	padding: 96px 0;
+}
+
+.page-section__card-row .heading{
+	text-align: center;
+	color: $primary-highlight;
+	margin-bottom: 96px;
+	font-weight: 600;
+}
+
+.card{
+	padding: 16px;
+	// @extend .box-shadow;
+	border: none;
+	height: 320px;
+	border-radius: $global-border-radius;
+
+	@include laptop{
+		height: 350px;
+	}
+
+	@include tablet-down{
+		margin-bottom: 32px;
+	}
+}
+
+.card__heading{
+	text-align:center;
+	color: $primary-highlight;
+	font-weight: 600;
+	margin: 0;
+}
+
+.card__body{
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.card__illustration{
+	max-height: 100px;
+	margin: 48px auto;
+}
