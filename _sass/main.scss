@@ -10,7 +10,7 @@
 }
 
 .box-shadow{
-	@include box-shadow(4px, 4px, 4px, rgba(89, 106, 125, 0.15));
+	@include box-shadow(2px, 2px, 8px, 8px rgba(89, 106, 125, 0.15));
 }
 
 .content-row{
