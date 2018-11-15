@@ -1,0 +1,27 @@
+.page-section__full-bleed-image{
+	background-size: cover;
+	background-position: center center; 
+	padding: 96px 0;
+}
+
+.large-card{
+	padding: 40px;
+	border-radius: $global-border-radius;
+	background-color: white;
+	@extend .box-shadow;
+}
+
+.large-card__heading{
+	color: $primary-highlight;
+	@include font-size(2rem, 2rem, 2rem, 2rem, 2rem);
+}
+
+.large-card__subheading{
+	font-weight: 600;
+	@include font-size(1.3rem, 1.3rem, 1.3rem, 1.3rem, 1.3em);
+	margin-bottom: 24px;
+}
+
+.large-card__body{
+	@include font-size(1.2rem, 1.2rem, 1.2rem, 1.2rem, 1.2rem);
+}

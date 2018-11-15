@@ -10,7 +10,7 @@
 }
 
 .box-shadow{
-	@include box-shadow(2px, 2px, 8px, 8px rgba(89, 106, 125, 0.15));
+	@include box-shadow(25px, 25px, 50px, -12.5px rgba(89, 106, 125, 0.15));
 }
 
 .content-row{
@@ -23,5 +23,11 @@
 }
 
 .body-copy--large{
-	@include font-size(1.2rem, 1.2rem, 1.2rem, 1.2rem, 1.2rem);
+	@include font-size(1.2rem, 1.2rem, 1.3rem, 1.4rem, 1.5rem);
+}
+
+.hr--small{
+	border-top: solid 2px $primary-highlight;
+	width: 64px;
+	margin: 32px auto;
 }
