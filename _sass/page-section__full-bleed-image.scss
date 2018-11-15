@@ -2,6 +2,12 @@
 	background-size: cover;
 	background-position: center center; 
 	padding: 96px 0;
+	height: 600px;
+
+	@include phone{
+		height: auto;
+		padding: 16px 0;
+	}
 }
 
 .large-card{
@@ -9,6 +15,9 @@
 	border-radius: $global-border-radius;
 	background-color: white;
 	@extend .box-shadow;
+	@include phone{
+		padding: 24px;
+	}
 }
 
 .large-card__heading{
@@ -24,4 +33,8 @@
 
 .large-card__body{
 	@include font-size(1.2rem, 1.2rem, 1.2rem, 1.2rem, 1.2rem);
+}
+
+.col__large-card{
+	padding: 0;
 }
