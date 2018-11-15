@@ -20,11 +20,12 @@
 
 .landing__heading{
 	color: white;
-	font-weight: 600;
+	font-weight: 500;
 	@include font-size(3rem, 3rem, 3rem, 3.5rem, 3.5rem);
 }
 
 .landing__subheading{
 	color: white;
+	font-weight: 400;
 	@include font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem, 1.5rem);
 }

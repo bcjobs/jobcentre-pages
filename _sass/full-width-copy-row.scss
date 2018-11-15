@@ -1,3 +1,17 @@
 .full-width-copy-row{
 	text-align: center;
 }
+
+
+.full-width-copy-row--alternate{
+	background-color: $light-primary;
+	text-align: center;
+}
+
+.full-width-copy-row--alternate .col{
+	background-color: white;
+	padding: 40px;
+	border-radius: $global-border-radius;
+	@extend .box-shadow;
+}
+

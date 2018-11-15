@@ -1,10 +1,14 @@
-<section class="full-width-copy-row container-fluid content-row">
+<section class="full-width-copy-row{% if include.style_class %}{{include.style_class}}{% endif %} container-fluid content-row ">
 
 	<div class="container">
-		<div class="col-sm-6 offset-sm-3 col-md-8 offset-md-2">
+		<div class="col-sm-6 offset-sm-3 col-md-8 offset-md-2 col">
 		<!-- I wonder if these should be variables -->
-		<h2 class="heading--highlight">Advertise Your Job</h2>
-		<p class="body-copy--large">Reach qualified local candidates and get responses right away by attracting the best applicants using our job distribution platform. When you choose BCjobs.ca, you'll gain access to over 150,000 monthly candidate visits.</p>
+		<h2 class="heading--highlight">{{include.section_heading}}</h2>
+		{% if include.section_subheading %}
+		<h4 class="">{{include.section_subheading}}</h4>
+		<hr class="hr--small"/>
+		{% endif %}
+		<p class="body-copy--large">{{include.section_body_copy}}</p>
 		</div>
 	</div>
 
