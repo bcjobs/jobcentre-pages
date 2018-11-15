@@ -9,17 +9,17 @@
 
 #logo__wordmark{
 	fill: $brand-blue;
-	fill: $primary-highlight;
+	// fill: $primary-highlight;
 }
 
 #logo__icon-top{
 	fill: $brand-blue;
-	fill: $primary-highlight;
+	// fill: $primary-highlight;
 }
 
 #logo__icon-bottom{
 	fill: $brand-green;
-	fill: $alternate-highlight;
+	// fill: $alternate-highlight;
 }
 
 .nav__link{
@@ -27,6 +27,7 @@
 	padding: 12px 24px;
 	&:hover{
 		color: $primary-highlight;
+		text-decoration: none;
 	}
 }
 
