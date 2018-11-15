@@ -24,11 +24,22 @@
 	}
 }
 
+.card-row__container{
+	@include laptop-down{
+		max-width: 100%;
+	}
+}
+
 .card{
 	padding: 16px;
 	border-radius: $global-border-radius;
+	text-align: center;
 	// @extend .box-shadow;
 	border: none;
+	@include tablet-down{
+		max-width: 320px;
+		@include center;
+	}
 }
 
 .card__heading{

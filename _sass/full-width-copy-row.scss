@@ -13,5 +13,8 @@
 	padding: 40px;
 	border-radius: $global-border-radius;
 	@extend .box-shadow;
+	@include phone{
+		padding: 32px 16px;
+	}
 }
 
