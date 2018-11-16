@@ -1,0 +1,69 @@
+
+.footer__link, .footer__text{
+	@include font-size(0.7em, 0.7em, 0.7em, 0.7em, 0.7em);
+}
+
+.footer__row{
+	padding: 8px 0;
+
+	@include tablet-down{
+		text-align: center;
+	}
+
+}
+
+.footer__link{
+	@include opacity(0.7);
+	&:hover{
+		@include opacity(1);
+	}
+}
+
+.footer__text{
+	@include opacity(0.7);
+}
+
+.footer__row--dark{
+	background-color: $brand-dark;
+	color: white;
+
+	.footer__link{
+		color: white;
+	}
+
+	.footer__text{
+		color: white;
+	}
+}
+
+.footer__row--light{
+	background-color: $light-grey;
+
+	.footer__link{
+		color: $brand-dark;
+	}
+
+	.footer__text{
+		color: $brand-dark;
+	}
+
+}
+
+
+.footer__col-social-media, .footer__col-partner-sites{
+	text-align: right;
+	@include phone{
+		text-align: center;
+	}
+}
+
+.footer__social-link svg{
+	height: 16px;
+	path{
+		fill: $brand-dark;
+	}
+}
+
+.footer__social-link{
+	padding: 0 8px;
+}

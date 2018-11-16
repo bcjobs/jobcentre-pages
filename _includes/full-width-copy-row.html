@@ -1,0 +1,17 @@
+<section class="full-width-copy-row{% if include.style_class %}{{include.style_class}}{% endif %} container-fluid content-row ">
+
+	<div class="container">
+
+		<div class="col-sm-12  col-md-8 offset-md-2 col">
+
+		<!-- I wonder if these should be variables -->
+		<h2 class="heading--highlight">{{include.section_heading}}</h2>
+		{% if include.section_subheading %}
+		<h4 class="">{{include.section_subheading}}</h4>
+		<hr class="hr--small"/>
+		{% endif %}
+		<p class="body-copy--large">{{include.section_body_copy}}</p>
+		</div>
+	</div>
+
+</section>
