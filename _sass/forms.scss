@@ -3,9 +3,12 @@
 	padding: 32px;
 	border-radius: $global-border-radius;
 	max-width: 375px;
+<<<<<<< HEAD
 	@include tablet-down{
 		@include center;
 	}
+=======
+>>>>>>> 42d79826238680e94fa7bb41df28f54f2d6890a2
 }
 
 .form__field-input{

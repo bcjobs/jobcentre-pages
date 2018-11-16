@@ -5,9 +5,12 @@
 
 .footer__row{
 	padding: 8px 0;
+<<<<<<< HEAD
 	@include tablet-down{
 		text-align: center;
 	}
+=======
+>>>>>>> 42d79826238680e94fa7bb41df28f54f2d6890a2
 }
 
 .footer__link{
@@ -47,6 +50,7 @@
 
 }
 
+<<<<<<< HEAD
 .footer__col-social-media, .footer__col-partner-sites{
 	text-align: right;
 	@include phone{
@@ -54,6 +58,8 @@
 	}
 }
 
+=======
+>>>>>>> 42d79826238680e94fa7bb41df28f54f2d6890a2
 .footer__social-link svg{
 	height: 16px;
 	path{
