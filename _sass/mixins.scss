@@ -295,6 +295,25 @@ $phone-width: 576px;
   }
 }
 
+@mixin height($phone, $tablet, $laptop, $desktop, $large){
+  @include phone{
+    height: $phone;
+  }
+  @include tablet{
+    height: $tablet;
+  }
+  @include laptop{
+    height: $laptop;
+  }
+  @include desktop{
+    height: $desktop;
+  }
+  @include large{
+    height: $large;
+  }
+}
+
+
 
 .mq{
   position: fixed;
