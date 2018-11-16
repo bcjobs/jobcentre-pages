@@ -5,6 +5,9 @@
 
 .footer__row{
 	padding: 8px 0;
+	@include tablet-down{
+		text-align: center;
+	}
 }
 
 .footer__link{
@@ -42,6 +45,13 @@
 		color: $brand-dark;
 	}
 
+}
+
+.footer__col-social-media, .footer__col-partner-sites{
+	text-align: right;
+	@include phone{
+		text-align: center;
+	}
 }
 
 .footer__social-link svg{
