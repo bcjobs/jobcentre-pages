@@ -295,7 +295,7 @@ $phone-width: 576px;
   }
 }
 
-<<<<<<< HEAD
+
 @mixin height($phone, $tablet, $laptop, $desktop, $large){
   @include phone{
     height: $phone;
@@ -314,9 +314,6 @@ $phone-width: 576px;
   }
 }
 
-
-=======
->>>>>>> 42d79826238680e94fa7bb41df28f54f2d6890a2
 
 .mq{
   position: fixed;
