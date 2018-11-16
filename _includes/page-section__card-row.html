@@ -4,9 +4,9 @@
 		<h3 class="heading">Your BC Jobs ad includes:</h3>
 
 
-		<div class="row">
+		<div class="row row-eq-height card__row">
 
-			<div class="col-md-4">
+			<div class="col-md-4 card-col">
 				<div class="card">
 					<img src="assets/img/illustration--paper-airplane.png" class="card__illustration" />
 					<h4 class="card__heading">Email Distribution</h4>
@@ -14,7 +14,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-4 card-col">
 				<div class="card">
 					<img src="assets/img/illustration--user.png" class="card__illustration" />
 					<h4 class="card__heading">Recommended Profiles</h4>
@@ -22,7 +22,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-4 card-col">
 				<div class="card">
 					<img src="assets/img/illustration--network.png" class="card__illustration" />
 					<h4 class="card__heading">Network Distribution</h4>
@@ -33,3 +33,25 @@
 		</div>
 	</div>
 </section>
+
+<!-- <script type="text/javascript">
+	$(document).ready(function(){
+
+		function resizeCards(){
+			$('.card__row').each(function(){
+				var cardRowHeight = $(this).height();
+				console.log('cardRowHeight: ', cardRowHeight);
+				$(this).find('.card').height(cardRowHeight - 32);
+			})
+		}
+
+		resizeCards();
+
+		$(window).resize(function(){
+			resizeCards();
+		})
+
+	})
+
+
+</script> -->
