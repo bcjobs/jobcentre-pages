@@ -12,15 +12,13 @@
 
 
 .page-section__card-row .card{
-	height: 320px;
+	@include height(auto, auto, 400px, 360px, 400px);
 	
-
-	@include laptop{
-		height: 350px;
-	}
+	// margin: 15px;
 
 	@include tablet-down{
 		margin-bottom: 32px;
+		max-width: 300px;
 	}
 }
 
@@ -37,7 +35,7 @@
 	// @extend .box-shadow;
 	border: none;
 	@include tablet-down{
-		max-width: 320px;
+		// max-width: 320px;
 		@include center;
 	}
 }
