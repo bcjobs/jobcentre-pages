@@ -7,7 +7,17 @@ post_url: "can add form post URLS here"
 
 ---
 
-{% include landing__full-bleed-image.html %}
+
+{% assign landing_heading = "Get Free Unlimited Job Postings for 7 days" %}
+{% assign landing_subheading = "No Term Commitment, Cancel Any Time" %}
+
+{% assign form_submit_text = "Post a Job Now!" %}
+
+{% include landing__full-bleed-image.html
+	landing_heading=landing_heading
+	landing_subheading=landing_subheading
+	form_submit_text=form_submit_text
+%}
 
 
 
