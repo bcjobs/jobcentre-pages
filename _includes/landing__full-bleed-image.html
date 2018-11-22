@@ -1,3 +1,7 @@
+
+{% assign post_url = page.post_url %}
+
+
 <section class="landing__full-bleed-image" style="background-image: url('{{page.landing-background-image}}')">
 	<div class="container landing__container">
 		<div class="row">
@@ -10,6 +14,7 @@
 			<div class="col-sm-6 col-lg-4 clear-overlay landing__col-form">
 				{% include form__sign-up.html
 					form_submit_text=form_submit_text
+					post_url=post_url
 				 %}
 			</div>
 

@@ -3,7 +3,7 @@ layout: default
 title: Home
 landing-background-image: 'assets/img/handshake.jpg'
 
-post_url: "can add form post URLS here"
+post_url: "add <form action URL> here"
 
 ---
 
@@ -12,6 +12,7 @@ post_url: "can add form post URLS here"
 {% assign landing_subheading = "No Term Commitment, Cancel Any Time" %}
 
 {% assign form_submit_text = "Post a Job Now!" %}
+
 
 {% include landing__full-bleed-image.html
 	landing_heading=landing_heading
@@ -90,6 +91,8 @@ Employers with recognizable brands are more attractive to job seekers. Becoming 
 {% assign section_heading = "Get Free Unlimited Job Postings for 3 days" %}
 {% assign section_subheading = "No Term Commitment, Cancel Any Time" %}
 {% assign background_image_url = "assets/img/worker-engine.jpg" %}
+{% assign form_submit_text = "Post a Job Now!" %}
+
 
 {% include component--cta-row.html
 	section_heading=section_heading
@@ -98,6 +101,9 @@ Employers with recognizable brands are more attractive to job seekers. Becoming 
 	section_heading=section_heading
 	style_class=style_class
 	background_image_url=background_image_url
+	form_submit_text=form_submit_text
+	post_url=post_url
+
 %}
 <!--END COMPONENT-->
 
