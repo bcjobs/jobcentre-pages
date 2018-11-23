@@ -1,7 +1,11 @@
+#nav{
+	padding: 0;
+}
 
 
-
-
+.navbar-brand{
+	padding: 16px;
+}
 
 #logo{
 	height: 32px;
@@ -35,6 +39,12 @@
 		text-decoration: none;
 
 	}
+	@include tablet-down{
+		@include font-size(0.9rem, 0.9rem, 0.9rem, 0.9rem, 0.9rem);
+		display: block;
+		text-align: center;
+		margin: 8px auto;
+	}
 }
 
 .nav__link.nav__cta{
@@ -43,8 +53,34 @@
 	padding-left: 1.5rem;
 	color: white;
 	padding-right: 1.5rem;
+	max-width: 240px;
 	&:hover{
 		background-color: darken($alternate-highlight, 10%);
 		text-decoration: none;
 	}
 }
+
+.nav__container{
+	@include tablet-down{
+		max-width: 100%;
+	}
+}
+
+#navDropDown{
+	@include tablet-down{
+		background-color: $light-grey;
+	}
+}
+
+.navbar-toggler{
+	margin-right: 16px;
+}
+
+.navbar-line{
+	border-top: solid 2px $brand-dark;
+	display: block;
+	width: 24px;
+	margin: 6px auto;
+
+}
+
