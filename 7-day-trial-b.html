@@ -1,0 +1,111 @@
+---
+layout: default
+title: BC Jobs - 7 Day Free Trial
+landing-background-image: 'assets/img/construction-site-aerial-1.jpg'
+permalink: /7-day-trial-b
+post_url: "https://www.bcjobs.ca/coupons/7-day-trial-blue"
+---
+
+
+
+{% assign landing_heading = "Get Free Unlimited Job Postings for 7 days" %}
+{% assign landing_subheading = "No Term Commitment, Cancel Any Time" %}
+
+{% assign form_submit_text = "Post a Job Now!" %}
+
+
+{% include landing__full-bleed-image.html
+	landing_heading=landing_heading
+	landing_subheading=landing_subheading
+	form_submit_text=form_submit_text
+%}
+
+
+
+<!--START COMPONENT-->
+{% assign section_heading = "Advertise Your Job" %}
+{% capture section_body_copy %}
+Reach qualified local candidates and get responses right away by attracting the best applicants using our job distribution platform. When you choose BCjobs.ca, you'll gain access to over 150,000 monthly candidate visits.
+{% endcapture %}
+
+{% include full-width-copy-row.html
+	section_heading=section_heading
+	section_subheading=section_subheading
+	section_body_copy=section_body_copy
+	section_heading=section_heading
+	style_class=style_class
+%}
+<!--END COMPONENT-->
+
+
+
+
+{% include page-section__card-row.html %}
+
+
+
+<!--START COMPONENT-->
+{% assign card_heading = "Résumé Search" %}
+{% assign card_sub_heading = "Access British Columbia's Top Talent" %}
+{% assign card_cta_copy = "Get Started" %}
+{% assign background_image_url = 'assets/img/bridge-worker.jpg' %}
+{% assign reverse_layout = true %}
+{% capture card_body %}
+Know who you're looking for but just can't find them? A BCjobs.ca Unlimited Plan gives you access to our entire job seeker database to find your ideal candidate! You can search by skill, location, or keyword to find candidates with the expertise you need. Once you've found a job seeker whose talent may fit, invite them to apply with a single click!
+{% endcapture %}
+
+{% include page-section__full-bleed-image.html
+	content=card_body
+	heading=card_heading
+	subheading=card_sub_heading
+	card_cta_copy=card_cta_copy
+	background_image_url=background_image_url
+	reverse_layout=reverse_layout
+%}
+<!--END COMPONENT-->
+
+
+
+<!--START COMPONENT-->
+{% assign section_heading = "Get Featured" %}
+{% assign section_subheading = "Grow Your Employer Brand" %}
+{% assign style_class = "--alternate" %}
+{% capture section_body_copy %}
+Employers with recognizable brands are more attractive to job seekers. Becoming a featured employer means that your brand will be front and center on BCjobs.ca. We get over 1 million page views per month. That's a whole lot of brand recognition!
+{% endcapture %}
+
+{% include full-width-copy-row.html
+	section_heading=section_heading
+	section_subheading=section_subheading
+	section_body_copy=section_body_copy
+	section_heading=section_heading
+	style_class=style_class
+%}
+<!-- RESET VARIABLES -->
+{% assign section_body_copy = null %}
+<!--END COMPONENT-->
+
+
+
+<!--START COMPONENT-->
+{% assign section_heading = "Get Free Unlimited Job Postings for 7 days" %}
+{% assign section_subheading = "No Term Commitment, Cancel Any Time" %}
+{% assign background_image_url = "assets/img/worker-engine.jpg" %}
+{% assign form_submit_text = "Post a Job Now!" %}
+
+
+{% include component--cta-row.html
+	section_heading=section_heading
+	section_subheading=section_subheading
+	section_body_copy=section_body_copy
+	section_heading=section_heading
+	style_class=style_class
+	background_image_url=background_image_url
+	form_submit_text=form_submit_text
+	post_url=post_url
+
+%}
+<!--END COMPONENT-->
+
+
+{% include footer.html %}
