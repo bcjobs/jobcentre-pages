@@ -3,6 +3,8 @@
 	background-position: center center; 
 	padding: 96px 0;
 
+	@include color-overlay(#596A7D, 0.2);
+
 	// height: 600px;
 
 
@@ -16,6 +18,8 @@
 	padding: 40px;
 	border-radius: $global-border-radius;
 	background-color: white;
+	position: relative;
+	z-index: 2;
 	@extend .box-shadow;
 	@include phone{
 		padding: 24px;
