@@ -3,3 +3,4 @@
 
 # Force HTTPS
 http://get.bcjobs.ca/* https://get.bcjobs.ca/:splat 301!
+http://get.albertajobcentre.ca/* https://get.albertajobcentre.ca/:splat 301!
