@@ -5,3 +5,8 @@
 http://get.bcjobs.ca/* https://get.bcjobs.ca/:splat 301!
 http://get.albertajobcentre.ca/* https://get.albertajobcentre.ca/:splat 301!
 http://get.novascotiajobs.ca/* https://get.novascotiajobs.ca/:splat 301!
+
+# Rewrite to site specific pages
+https://get.bcjobs.ca/* /bcjobs/:splat 200
+https://get.albertajobcentre.ca/* /albertajobcentre/:splat 200
+https://get.novascotiajobs.ca/* /novascotiajobs/:splat 200
