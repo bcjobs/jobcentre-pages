@@ -1,15 +1,7 @@
----
-layout: default
-title: BC Jobs - 7 Day Free Trial
-landing-background-image: 'assets/img/handshake.jpg'
-permalink: /50-off-month-one
-post_url: "https://www.bcjobs.ca/coupons/50-off-month-one"
-
----
 
 
-{% assign landing_heading = "Get Your First Month <br/> at 50% Off" %}
-{% assign landing_subheading = "Regular Price - <span class='strike-through text--white'>$339</span> <br/> Get first month for $169" %}
+{% assign landing_heading = "Get Your First Job Posting for $99 <span class='strike-through text--white'>$219</span>" %}
+{% assign landing_subheading = "" %}
 
 {% assign form_submit_text = "Post a Job Now!" %}
 
@@ -26,7 +18,7 @@ post_url: "https://www.bcjobs.ca/coupons/50-off-month-one"
 <!--START COMPONENT-->
 {% assign section_heading = "Advertise Your Job" %}
 {% capture section_body_copy %}
-Reach qualified local candidates and get responses right away by attracting the best applicants using our job distribution platform. When you choose BCjobs.ca, you'll gain access to over 150,000 monthly candidate visits.
+Reach qualified local candidates and get responses right away by attracting the best applicants using our job distribution platform. When you choose {{page.site_url}}, you'll gain access to over 150,000 monthly candidate visits.
 {% endcapture %}
 
 {% include full-width-copy-row.html
@@ -47,12 +39,14 @@ Reach qualified local candidates and get responses right away by attracting the 
 
 <!--START COMPONENT-->
 {% assign card_heading = "Résumé Search" %}
-{% assign card_sub_heading = "Access British Columbia's Top Talent" %}
+{% capture  card_sub_heading %}
+Access {{page.region}}'s Top Talent
+{% endcapture %}
 {% assign card_cta_copy = "Get Started" %}
-{% assign background_image_url = 'assets/img/office-two-colleagues.jpg' %}
+{% assign background_image_url = '/assets/img/office-two-colleagues.jpg' %}
 {% assign reverse_layout = true %}
 {% capture card_body %}
-Know who you're looking for but just can't find them? A BCjobs.ca Unlimited Plan gives you access to our entire job seeker database to find your ideal candidate! You can search by skill, location, or keyword to find candidates with the expertise you need. Once you've found a job seeker whose talent may fit, invite them to apply with a single click!
+Know who you're looking for but just can't find them? A {{page.site_url}} Unlimited Plan gives you access to our entire job seeker database to find your ideal candidate! You can search by skill, location, or keyword to find candidates with the expertise you need. Once you've found a job seeker whose talent may fit, invite them to apply with a single click!
 {% endcapture %}
 
 {% include page-section__full-bleed-image.html
@@ -72,7 +66,7 @@ Know who you're looking for but just can't find them? A BCjobs.ca Unlimited Plan
 {% assign section_subheading = "Grow Your Employer Brand" %}
 {% assign style_class = "--alternate" %}
 {% capture section_body_copy %}
-Employers with recognizable brands are more attractive to job seekers. Becoming a featured employer means that your brand will be front and center on BCjobs.ca. We get over 1 million page views per month. That's a whole lot of brand recognition!
+Employers with recognizable brands are more attractive to job seekers. Becoming a featured employer means that your brand will be front and center on {{page.site_url}}. We get over 1 million page views per month. That's a whole lot of brand recognition!
 {% endcapture %}
 
 {% include full-width-copy-row.html
@@ -89,9 +83,9 @@ Employers with recognizable brands are more attractive to job seekers. Becoming 
 
 
 <!--START COMPONENT-->
-{% assign section_heading = "Get Your First Month <br/> at 50% Off"  %}
-{% assign section_subheading = "Regular Price - <span class='strike-through text--white'>$339</span> <br/> Get first month for $169" %}
-{% assign background_image_url = "assets/img/office-presenter.jpg" %}
+{% assign section_heading = "Get Your First Job Posting for $99 <span class='strike-through text--white'>$219</span>"  %}
+{% assign section_subheading = "" %}
+{% assign background_image_url = "/assets/img/office-presenter.jpg" %}
 {% assign form_submit_text = "Post a Job Now!" %}
 
 
