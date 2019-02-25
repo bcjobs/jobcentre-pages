@@ -71,7 +71,7 @@
 	}
 }
 
-#navDropDown{
+#navDropDown.show{
 	@include tablet-down{
 		background-color: $light-grey;
 	}
