@@ -16,6 +16,13 @@
 	width: auto;
 }
 
+.albertajobcentre .navbar-logo,
+.novascotiajobs, .navbar-logo{
+	@include phone{
+		height: 24px;
+	}
+}
+
 #logo__wordmark{
 	fill: $brand-blue;
 
