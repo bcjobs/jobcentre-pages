@@ -2,19 +2,9 @@
 
       <div class="container nav__container">
 
-        {% if page.url contains "bcjobs" %}
-          <a class="navbar-brand" href="https://www.bcjobs.ca/">
-        {% include svg-logo.html %}
+        <a class="navbar-brand" href="https://www.{{site_name}}.ca/">
+          <img class="navbar-logo" src="/assets/img/logo-{{site_name}}.png">
         </a>
-        {% elsif page.url contains "novascotiajobs" %} 
-         <a class="navbar-brand" href="https://www.novascotiajobs.ca/">
-          <img class="navbar-logo" src="/assets/img/logo-novascotiajobs.png">
-        </a>
-        {% elsif page.url contains "albertajobcentre" %} 
-        <a class="navbar-brand" href="https://www.albertajobcentre.ca/">
-          <img class="navbar-logo" src="/assets/img/logo-albertajobcentre.png">
-        </a>
-        {% endif %}
 
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navDropDown" aria-controls="navDropDown" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,12 +15,7 @@
 
         <div id="navDropDown" class="collapse navbar-collapse" >
           <ul class="navbar-nav ml-auto">
-           <!--  <li class="nav-item active">
-              <a class=" nav__link" href="#">See Who's Hiring</a>
-            </li>
-            <li class="nav-item">
-              <a class=" nav__link" href="#">See Jobs</a>
-            </li> -->
+
             <li class="nav-item">
               <a href="https://www.bcjobs.ca/login" class="nav__link nav__cta" >Sign In</a>
             </li>
