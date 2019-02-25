@@ -1,23 +1,12 @@
-<!-- <nav class="">
-  <div class="container">
+<nav id="nav"  class="navbar navbar-expand-sm">
 
-
-
-
-    <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
-    |
-    <a href="/about" {% if page.url == "/about" %}class="active"{% endif %}>About</a>
-
-  </div>
-</nav> -->
-
-
-
-<nav id="nav"  class="navbar navbar-expand-sm ">
       <div class="container nav__container">
-        <a class="navbar-brand" href="https://www.bcjobs.ca/">
-      {% include svg-logo.html %}
-    </a>
+
+        <a class="navbar-brand" href="https://www.{{site_name}}.ca/">
+          <img class="navbar-logo" src="/assets/img/logo-{{site_name}}.png">
+        </a>
+
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navDropDown" aria-controls="navDropDown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-line"></span>
           <span class="navbar-line"></span>
@@ -26,14 +15,9 @@
 
         <div id="navDropDown" class="collapse navbar-collapse" >
           <ul class="navbar-nav ml-auto">
-           <!--  <li class="nav-item active">
-              <a class=" nav__link" href="#">See Who's Hiring</a>
-            </li>
+
             <li class="nav-item">
-              <a class=" nav__link" href="#">See Jobs</a>
-            </li> -->
-            <li class="nav-item">
-              <a href="https://www.bcjobs.ca/login" class="nav__link nav__cta" >Sign In</a>
+              <a href="https://{{site_name}}.ca/login" class="nav__link nav__cta" >Sign In</a>
             </li>
 
           </ul>

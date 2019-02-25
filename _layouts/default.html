@@ -24,7 +24,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {% include fullstory.html %}
 
   </head>
-  <body>
+  {% assign site_name = page.url | remove_first: "/" | split: "/" | first %}
+  <body class="{{site_name}}">
+
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZK2ZS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- <div class="mq"></div>  -->
     {% include nav.html %}
