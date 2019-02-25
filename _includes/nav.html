@@ -1,23 +1,21 @@
-<!-- <nav class="">
-  <div class="container">
-
-
-
-
-    <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
-    |
-    <a href="/about" {% if page.url == "/about" %}class="active"{% endif %}>About</a>
-
-  </div>
-</nav> -->
-
-
-
-<nav id="nav"  class="navbar navbar-expand-sm ">
+<<nav id="nav"  class="navbar navbar-expand-sm ">
       <div class="container nav__container">
-        <a class="navbar-brand" href="https://www.bcjobs.ca/">
-      {% include svg-logo.html %}
-    </a>
+
+        {% if page.url contains "bcjobs" %}
+          <a class="navbar-brand" href="https://www.bcjobs.ca/">
+        {% include svg-logo.html %}
+        </a>
+        {% elsif page.url contains "novascotiajobs" %} 
+         <a class="navbar-brand" href="https://www.novascotiajobs.ca/">
+          <img class="navbar-logo" src="/assets/img/logo-novascotiajobs.png">
+        </a>
+        {% elsif page.url contains "albertajobcentre" %} 
+        <a class="navbar-brand" href="https://www.albertajobcentre.ca/">
+          <img class="navbar-logo" src="/assets/img/logo-albertajobcentre.png">
+        </a>
+        {% endif %}
+
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navDropDown" aria-controls="navDropDown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-line"></span>
           <span class="navbar-line"></span>
