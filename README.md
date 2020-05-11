@@ -1,4 +1,8 @@
-# Setup (macOS)
+# Setup
+* Install Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+* Clone this repo: `git clone https://github.com/bcjobs/jobcentre-get.git`
+
+# Install Jekyll (macOS)
 * Update Homebrew: `brew update`
 * Use Ruby version manager
   * Install rbenv if it isn't installed: `brew install rbenv`
@@ -15,9 +19,41 @@
 * Install gems
   * `bundle install`
 
-# Development
-* In the project directly, start the Jekyll server: `bundle exec jekyll serve`
-* Go to http://localhost:4000
+# Start Development Server
+* In the project directory, start the Jekyll server: `bundle exec jekyll serve`
+* Go to http://localhost:4000 in your browser
+
+# Tutorial: Create a new widget page at https://get.bcjobs.ca/cool-widget
+  * Add a file to `sites/bcjobs` folder and name it `cool-widget.html`
+  * Add a `permalink` to the top of the page, followed by HTML. For example:
+  * The `permalink` specifies what the page URL will be. For example, `bcjobs/cool-widget` means:
+    * The URL during development will be http://localhost:4000/bcjobs/cool-widget
+    * The URL in production will be https://get.bcjobs.ca/cool-widget
+  ```
+  ---
+  permalink: bcjobs/cool-widget
+  ---
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello world!</h1>
+  </body>
+  </html>
+  ```
+  * Preview the new page at http://localhost:4000/bcjobs/cool-widget
 
 # Deployment
-* Push to master branch on GitHub. This will trigger continuous deployment to update the remote site on Netlify.
+* Push master branch to GitHub. This will trigger continuous deployment to update the remote site on Netlify.
+* Example:
+  * Note: we're using `Add cool widget page` in our example below, but make sure to customize your commit message
+  ```
+  git add .
+  git commit -m "Add cool widget page"
+  git push
+  ```
